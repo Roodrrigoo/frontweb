@@ -1,4 +1,3 @@
-import React from 'react';
 export function OurStory() {
   return <section id="about" className="py-24 bg-white relative overflow-hidden">
       {/* Background gradients */}
@@ -26,12 +25,7 @@ export function OurStory() {
               </p>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                We believe that every pet deserves to feel loved, safe, and
-                connected to their human companions. Through innovative AI
-                technology and advanced haptic sensors, we've created a solution
-                that bridges the gap between humans and their furry friends,
-                providing comfort and emotional support whenever it's needed
-                most.
+                  We believe that every pet deserves to feel loved, safe, and connected to their human companions. Through innovative AI technology and our anxiety relief system, we've created a solution that bridges the gap between humans and their furry friends, providing comfort and emotional support whenever it's needed most.
               </p>
             </div>
           </div>
