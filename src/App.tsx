@@ -22,7 +22,7 @@ export function App() {
 
                 {/* First full-width image section with custom PNG */}
                 <FullWidthImage
-                    imageUrl="/src/components/media/4.png"
+                    imageUrl="/media/4.png"
                     alt="TechPup HugVest product showcase"
                     overlayText="Revolutionary AI-powered comfort that your pet will love"
                     height="h-[600px]"
@@ -33,7 +33,7 @@ export function App() {
 
                 {/* Second full-width section with features GIF */}
                 <FullWidthImage
-                    imageUrl="/src/components/media/features.gif"
+                    imageUrl="/media/features.gif"
                     alt="TechPup HugVest features demonstration"
                     overlayText="Experience cutting-edge technology that adapts to your pet's needs"
                     height="h-[500px]"

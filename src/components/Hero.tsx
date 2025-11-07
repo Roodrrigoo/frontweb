@@ -16,7 +16,7 @@ export function Hero() {
             {/* GIF Background */}
             <div className="absolute inset-0 w-full h-full">
                 <img
-                    src="/src/components/media/maingif.gif"
+                    src="/media/maingif.gif"
                     alt="TechPup HugVest background"
                     className="w-full h-full object-cover"
                 />

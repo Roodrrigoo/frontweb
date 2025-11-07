@@ -4,16 +4,16 @@ import { HeartIcon, SmartphoneIcon, WifiIcon } from 'lucide-react';
 export function VirtualHug() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const images = [
-        '/src/components/media/one.jpg',
-        '/src/components/media/two.jpg',
-        '/src/components/media/three.jpg',
-        '/src/components/media/four.jpg',
-        '/src/components/media/five.jpg',
-        '/src/components/media/six.jpg',
-        '/src/components/media/seven.jpg',
-        '/src/components/media/eight.jpg',
-        '/src/components/media/nine.jpg',
-        '/src/components/media/ten.jpg'
+        '/media/one.jpg',
+        '/media/two.jpg',
+        '/media/three.jpg',
+        '/media/four.jpg',
+        '/media/five.jpg',
+        '/media/six.jpg',
+        '/media/seven.jpg',
+        '/media/eight.jpg',
+        '/media/nine.jpg',
+        '/media/ten.jpg'
     ];
 
     const steps = [{

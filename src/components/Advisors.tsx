@@ -9,7 +9,7 @@ export function Advisors() {
             name: 'Dr. Duncan Houston',
             title: 'Medical Veterinarian and CEO, Ask a Vet',
             description: 'Veterinary medicine expert and pet health advocate',
-            image: '/src/components/media/Duncan.avif',
+            image: '/media/Duncan.avif',
             linkedin: '#',
             flipContent: {
                 role: 'Medical Veterinarian',
@@ -21,7 +21,7 @@ export function Advisors() {
             name: 'Dr. Gino Yu',
             title: 'Digital Entertainment & Game Development Expert',
             description: 'Leading authority in interactive media and digital innovation',
-            image: '/src/components/media/Gino.avif',
+            image: '/media/Gino.avif',
             linkedin: '#',
             flipContent: {
                 role: 'Business Development',
@@ -33,7 +33,7 @@ export function Advisors() {
             name: 'Chandan Sethi',
             title: 'Product Development & Marketing Strategist',
             description: 'Expert in product-market fit and go-to-market strategies',
-            image: '/src/components/media/Chandan.avif',
+            image: '/media/Chandan.avif',
             linkedin: '#',
             flipContent: {
                 role: 'Product Development & Marketing',
@@ -45,7 +45,7 @@ export function Advisors() {
             name: 'Andrew Chen',
             title: 'Strategic Advisor, Arion Ventures',
             description: 'Venture capital and strategic growth specialist',
-            image: '/src/components/media/Andrew.avif',
+            image: '/media/Andrew.avif',
             linkedin: '#',
             flipContent: {
                 role: 'Business & Product Development',

@@ -9,7 +9,7 @@ export function Team() {
             name: 'Shakira Monique',
             title: 'Founder & CEO',
             description: 'Business Development and Researcher at Hong Kong Polytechnic University',
-            image: "/src/components/media/Shakira.avif",
+            image: "/media/Shakira.avif",
             linkedin: '#',
             flipContent: {
                 role: 'Researcher',
@@ -21,7 +21,7 @@ export function Team() {
             name: 'Dr. Vaheh Nazari',
             title: 'CTO',
             description: 'PhD in Robotic Engineering',
-            image: "/src/components/media/Vaheh.avif",
+            image: "/media/Vaheh.avif",
             linkedin: '#',
             flipContent: {
                 role: 'PhD Robotic Engineering',
@@ -33,7 +33,7 @@ export function Team() {
             name: 'Tayseer Almattar',
             title: 'COO',
             description: 'Product Design Engineer',
-            image: "/src/components/media/Tayseer.avif",
+            image: "/media/Tayseer.avif",
             linkedin: '#',
             flipContent: {
                 role: 'Product Design and Engineer',
@@ -45,7 +45,7 @@ export function Team() {
             name: 'Gihyun Derek Kim',
             title: 'Software & AI Engineer',
             description: 'Machine Learning & App Development',
-            image: "/src/components/media/Gihyun.avif",
+            image: "/media/Gihyun.avif",
             linkedin: '#',
             flipContent: {
                 role: 'Neuroscience',
@@ -57,7 +57,7 @@ export function Team() {
             name: 'David Phalaris',
             title: 'Head of Game Development',
             description: 'Interactive Experience Designer',
-            image: "/src/components/media/David.jpeg",
+            image: "/media/David.jpeg",
             linkedin: '#',
             flipContent: {
                 role: 'Game Producer',

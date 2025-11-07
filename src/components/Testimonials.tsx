@@ -6,19 +6,19 @@ export function Testimonials() {
         author: 'Hugo',
         role: 'Pet Owner',
         rating: 5,
-        image: '/src/components/media/1.jpg'
+        image: '/media/1.jpg'
     }, {
         quote: 'Finally multi functioning innovative Tech for Dogs',
         author: 'Jim',
         role: 'Dog Trainer',
         rating: 5,
-        image: '/src/components/media/2.jpg'
+        image: '/media/2.jpg'
     }, {
         quote: 'Taking care of the Emotional wellbeing of pets is equally important as taking care of their physical health',
         author: 'Sarah',
         role: 'Veterinarian',
         rating: 5,
-        image: '/src/components/media/3.png' // Using same image for now, you can add more images
+        image: '/media/3.png'
     }];
 
     return (

@@ -123,9 +123,9 @@ export function Features() {
                                     muted
                                     loop
                                     playsInline
-                                    poster="/src/components/media/tech-poster.jpg" // Optional: add a poster frame
+                                    poster="/media/tech-poster.jpg" // Optional: add a poster frame
                                 >
-                                    <source src="/src/components/media/tech.mp4" type="video/mp4" />
+                                    <source src="/media/tech.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
 

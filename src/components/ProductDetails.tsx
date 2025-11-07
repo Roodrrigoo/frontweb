@@ -21,7 +21,7 @@ export function ProductDetails() {
                                 {/* Main vest image */}
                                 <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 shadow-2xl">
                                     <img
-                                        src="/src/components/media/vest.avif"
+                                        src="/media/vest.avif"
                                         alt="TechPup HugVest Product"
                                         className="rounded-2xl w-full transform group-hover:scale-105 transition duration-700 shadow-lg"
                                     />
@@ -30,7 +30,7 @@ export function ProductDetails() {
                                 {/* Floating app image */}
                                 <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-white rounded-2xl shadow-2xl border border-gray-100 transform rotate-6 group-hover:rotate-3 group-hover:scale-105 transition-all duration-500">
                                     <img
-                                        src="/src/components/media/app.avif"
+                                        src="/media/app.avif"
                                         alt="TechPup App Interface"
                                         className="rounded-2xl w-full h-full object-cover"
                                     />

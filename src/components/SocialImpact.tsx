@@ -6,7 +6,7 @@ export function SocialImpact() {
             {/* Background with GIF */}
             <div className="absolute inset-0 w-full h-full">
                 <img
-                    src="/src/components/media/shelter.gif"
+                    src="/media/shelter.gif"
                     alt="Animal shelter dogs receiving comfort and love"
                     className="w-full h-full object-cover"
                 />
@@ -58,7 +58,7 @@ export function SocialImpact() {
                                 {/* Additional GIF preview for emphasis */}
                                 <div className="relative h-64 lg:h-80 overflow-hidden">
                                     <img
-                                        src="/src/components/media/shelter.gif"
+                                        src="/media/shelter.gif"
                                         alt="Shelter dogs finding comfort with TechPup technology"
                                         className="w-full h-full object-cover"
                                     />
