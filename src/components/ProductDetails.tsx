@@ -140,7 +140,6 @@ export function ProductDetails() {
                                         'GPS tracking and geofencing alerts',
                                         'Premium app features and community access',
                                         'Water-resistant and durable design',
-                                        '24/7 customer support included'
                                     ].map((item, i) => (
                                         <div key={i} className="flex items-start space-x-4 group hover:transform hover:translate-x-2 transition">
                                             <div className="w-7 h-7 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:scale-110 transition shadow-lg">

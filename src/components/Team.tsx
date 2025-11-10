@@ -10,7 +10,7 @@ export function Team() {
             title: 'Founder & CEO',
             description: 'Business Development and Researcher at Hong Kong Polytechnic University',
             image: "/media/Shakira.avif",
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/in/shakira-monique-4940b122b/',
             flipContent: {
                 role: 'Researcher',
                 subtitle: 'Hong Kong Polytechnic University',
@@ -22,7 +22,7 @@ export function Team() {
             title: 'CTO',
             description: 'PhD in Robotic Engineering',
             image: "/media/Vaheh.avif",
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/in/vaheh-nazari-508304167/',
             flipContent: {
                 role: 'PhD Robotic Engineering',
                 subtitle: 'University of Queensland',
@@ -31,10 +31,10 @@ export function Team() {
         },
         {
             name: 'Tayseer Almattar',
-            title: 'COO',
+            title: ' Head of Product Design',
             description: 'Product Design Engineer',
             image: "/media/Tayseer.avif",
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/in/tayseer-almattar-design-innovation/',
             flipContent: {
                 role: 'Product Design and Engineer',
                 subtitle: 'Hong Kong Polytechnic University',
@@ -46,7 +46,7 @@ export function Team() {
             title: 'Software & AI Engineer',
             description: 'Machine Learning & App Development',
             image: "/media/Gihyun.avif",
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/in/gihyun-derek-kim/',
             flipContent: {
                 role: 'Neuroscience',
                 subtitle: 'University College London',
@@ -55,10 +55,10 @@ export function Team() {
         },
         {
             name: 'David Phalaris',
-            title: 'Head of Game Development',
+            title: 'COO & Game Development',
             description: 'Interactive Experience Designer',
             image: "/media/David.jpeg",
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/in/david-phalaris/',
             flipContent: {
                 role: 'Game Producer',
                 subtitle: 'Swords College, IBAT, Dublin',
@@ -95,24 +95,18 @@ export function Team() {
                         {teamMembers.map((member, index) => (
                             <div
                                 key={index}
-                                className="group relative h-96 cursor-pointer"
+                                className={`flip-card group relative h-[550px] cursor-pointer ${flippedCard === index ? 'flipped' : ''}`}
                                 onClick={() => handleCardClick(index)}
                             >
                                 {/* Gradient border on hover */}
                                 <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl opacity-0 group-hover:opacity-100 transition blur"></div>
 
                                 {/* Flip container */}
-                                <div
-                                    className={`relative w-full h-full transition-transform duration-700 ${flippedCard === index ? 'rotate-y-180' : ''}`}
-                                    style={{ transformStyle: 'preserve-3d' }}
-                                >
+                                <div className="flip-card-inner w-full h-full">
                                     {/* Front of card */}
-                                    <div
-                                        className="absolute inset-0 bg-white rounded-2xl shadow-lg group-hover:shadow-2xl transition overflow-hidden"
-                                        style={{ backfaceVisibility: 'hidden' }}
-                                    >
+                                    <div className="flip-card-front bg-white rounded-2xl shadow-lg group-hover:shadow-2xl transition overflow-hidden">
                                         {/* Image with gradient overlay */}
-                                        <div className="relative overflow-hidden h-56">
+                                        <div className="relative overflow-hidden h-64">
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 z-10 opacity-0 group-hover:opacity-100 transition"></div>
                                             <img
                                                 src={member.image}
@@ -147,13 +141,7 @@ export function Team() {
                                     </div>
 
                                     {/* Back of card */}
-                                    <div
-                                        className="absolute inset-0 bg-white rounded-2xl shadow-lg overflow-hidden p-6"
-                                        style={{
-                                            backfaceVisibility: 'hidden',
-                                            transform: 'rotateY(180deg)'
-                                        }}
-                                    >
+                                    <div className="flip-card-back bg-white rounded-2xl shadow-lg overflow-hidden p-6">
                                         <div className="h-full flex flex-col">
                                             <div className="text-center mb-4">
                                                 <div className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-bold text-lg mb-1">

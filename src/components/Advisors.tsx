@@ -10,7 +10,7 @@ export function Advisors() {
             title: 'Medical Veterinarian and CEO, Ask a Vet',
             description: 'Veterinary medicine expert and pet health advocate',
             image: '/media/Duncan.avif',
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/in/duncan-houston-bvsc-96044382/',
             flipContent: {
                 role: 'Medical Veterinarian',
                 subtitle: 'CityU Clinical Doctor, Founder "Ask a Vet"',
@@ -22,7 +22,7 @@ export function Advisors() {
             title: 'Digital Entertainment & Game Development Expert',
             description: 'Leading authority in interactive media and digital innovation',
             image: '/media/Gino.avif',
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/in/ginoyu/',
             flipContent: {
                 role: 'Business Development',
                 subtitle: 'Associate Professor, Director of Digital Entertainment & Game Development',
@@ -34,7 +34,7 @@ export function Advisors() {
             title: 'Product Development & Marketing Strategist',
             description: 'Expert in product-market fit and go-to-market strategies',
             image: '/media/Chandan.avif',
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/in/chandansethi1/',
             flipContent: {
                 role: 'Product Development & Marketing',
                 subtitle: 'Venture Builder, Wellness & Healthcare, Business Strategist',
@@ -46,7 +46,7 @@ export function Advisors() {
             title: 'Strategic Advisor, Arion Ventures',
             description: 'Venture capital and strategic growth specialist',
             image: '/media/Andrew.avif',
-            linkedin: '#',
+            linkedin: 'https://www.linkedin.com/in/chenandrew/',
             flipContent: {
                 role: 'Business & Product Development',
                 subtitle: 'Arion Ventures, Strategic Advisory, Entrepreneurship Lecturer, Fortune 500',
@@ -84,21 +84,15 @@ export function Advisors() {
                         {advisors.map((advisor, index) => (
                             <div
                                 key={index}
-                                className="group relative h-96 cursor-pointer"
+                                className={`flip-card group relative h-96 cursor-pointer ${flippedCard === index ? 'flipped' : ''}`}
                                 onClick={() => handleCardClick(index)}
                             >
                                 <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl opacity-0 group-hover:opacity-100 transition blur"></div>
 
                                 {/* Flip container */}
-                                <div
-                                    className={`relative w-full h-full transition-transform duration-700 ${flippedCard === index ? 'rotate-y-180' : ''}`}
-                                    style={{ transformStyle: 'preserve-3d' }}
-                                >
+                                <div className="flip-card-inner w-full h-full">
                                     {/* Front of card */}
-                                    <div
-                                        className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl transition h-full"
-                                        style={{ backfaceVisibility: 'hidden' }}
-                                    >
+                                    <div className="flip-card-front bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl transition h-full">
                                         {/* Image */}
                                         <div className="relative h-56 overflow-hidden">
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
@@ -135,13 +129,7 @@ export function Advisors() {
                                     </div>
 
                                     {/* Back of card */}
-                                    <div
-                                        className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg overflow-hidden p-5"
-                                        style={{
-                                            backfaceVisibility: 'hidden',
-                                            transform: 'rotateY(180deg)'
-                                        }}
-                                    >
+                                    <div className="flip-card-back bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg overflow-hidden p-5">
                                         <div className="h-full flex flex-col">
                                             <div className="text-center mb-4">
                                                 <div className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-bold text-sm mb-1">

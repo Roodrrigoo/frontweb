@@ -1,4 +1,5 @@
 // App.tsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { VirtualHug } from './components/VirtualHug';
@@ -12,15 +13,14 @@ import { Advisors } from './components/Advisors';
 import { CommunitySignup } from './components/CommunitySignup';
 import { Footer } from './components/Footer';
 import { FullWidthImage } from './components/FullWidthImage';
+import { ComingSoon } from './components/ComingSoon';
 
-export function App() {
+function HomePage() {
     return (
         <div className="min-h-screen bg-white">
             <Header />
             <main>
                 <Hero />
-
-                {/* First full-width image section with custom PNG */}
                 <FullWidthImage
                     imageUrl="/media/4.png"
                     alt="TechPup HugVest product showcase"
@@ -28,10 +28,7 @@ export function App() {
                     height="h-[600px]"
                     type="image"
                 />
-
                 <VirtualHug />
-
-                {/* Second full-width section with features GIF */}
                 <FullWidthImage
                     imageUrl="/media/features.gif"
                     alt="TechPup HugVest features demonstration"
@@ -39,7 +36,6 @@ export function App() {
                     height="h-[500px]"
                     type="gif"
                 />
-
                 <Features />
                 <ProductDetails />
                 <SocialImpact />
@@ -48,8 +44,6 @@ export function App() {
                 <Team />
                 <Advisors />
                 <CommunitySignup />
-
-                {/* Final full-width call to action */}
                 <FullWidthImage
                     imageUrl="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=1920&h=1080&fit=crop"
                     alt="Dog looking at camera"
@@ -60,5 +54,16 @@ export function App() {
             </main>
             <Footer />
         </div>
+    );
+}
+
+export function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/coming-soon" element={<ComingSoon />} />
+            </Routes>
+        </Router>
     );
 }

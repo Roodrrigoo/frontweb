@@ -1,6 +1,15 @@
-import { InstagramIcon, YoutubeIcon, FacebookIcon, TwitterIcon } from 'lucide-react';
+// src/components/Footer.tsx
+import { InstagramIcon, LinkedinIcon } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export function Footer() {
+    const navigate = useNavigate();
+
+    const handleComingSoon = (e: React.MouseEvent) => {
+        e.preventDefault();
+        navigate('/coming-soon');
+    };
+
     return (
         <footer className="relative overflow-hidden">
             {/* Enhanced gradient background */}
@@ -24,22 +33,26 @@ export function Footer() {
                                         TP
                                     </div>
                                     <span className="text-2xl font-bold text-white">
-                    TechPup HugVest
-                  </span>
+                                        TechPup HugVest
+                                    </span>
                                 </div>
                                 <p className="text-gray-300 text-sm leading-relaxed">
                                     Revolutionizing pet care with AI-powered technology.
                                     Comfort your pets from anywhere with our innovative HugVest.
                                 </p>
                                 <div className="flex items-center space-x-4">
-                                    {[InstagramIcon, YoutubeIcon, FacebookIcon, TwitterIcon].map((Icon, index) => (
-                                        <a
-                                            key={index}
-                                            href="#"
+                                    {[
+                                        { Icon: InstagramIcon, name: 'Instagram' },
+                                        { Icon: LinkedinIcon, name: 'LinkedIn' }
+                                    ].map(({ Icon, name }) => (
+                                        <button
+                                            key={name}
+                                            onClick={handleComingSoon}
                                             className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-primary hover:to-secondary transition-all duration-300 transform hover:scale-110 hover:rotate-12 shadow-lg"
+                                            title={name}
                                         >
                                             <Icon size={18} />
-                                        </a>
+                                        </button>
                                     ))}
                                 </div>
                             </div>
@@ -49,13 +62,13 @@ export function Footer() {
                                 <h3 className="text-lg font-bold text-white mb-4">Product</h3>
                                 <div className="space-y-2">
                                     {['HugVest Features', 'Pricing Plans', 'Mobile App', 'Accessories', 'New Arrivals'].map((item) => (
-                                        <a
+                                        <button
                                             key={item}
-                                            href="#"
-                                            className="block text-gray-300 hover:text-white transition-colors duration-200 hover:translate-x-2 transform"
+                                            onClick={handleComingSoon}
+                                            className="block text-gray-300 hover:text-white transition-colors duration-200 hover:translate-x-2 transform cursor-pointer w-full text-left"
                                         >
                                             {item}
-                                        </a>
+                                        </button>
                                     ))}
                                 </div>
                             </div>
@@ -65,13 +78,13 @@ export function Footer() {
                                 <h3 className="text-lg font-bold text-white mb-4">Company</h3>
                                 <div className="space-y-2">
                                     {['About Us', 'Our Story', 'Sustainability', 'Contact', 'Careers'].map((item) => (
-                                        <a
+                                        <button
                                             key={item}
-                                            href="#"
-                                            className="block text-gray-300 hover:text-white transition-colors duration-200 hover:translate-x-2 transform"
+                                            onClick={handleComingSoon}
+                                            className="block text-gray-300 hover:text-white transition-colors duration-200 hover:translate-x-2 transform cursor-pointer w-full text-left"
                                         >
                                             {item}
-                                        </a>
+                                        </button>
                                     ))}
                                 </div>
                             </div>
@@ -81,13 +94,13 @@ export function Footer() {
                                 <h3 className="text-lg font-bold text-white mb-4">Support</h3>
                                 <div className="space-y-2">
                                     {['Help Center', 'FAQs', 'Shipping Info', 'Returns', 'Next Events'].map((item) => (
-                                        <a
+                                        <button
                                             key={item}
-                                            href="#"
-                                            className="block text-gray-300 hover:text-white transition-colors duration-200 hover:translate-x-2 transform"
+                                            onClick={handleComingSoon}
+                                            className="block text-gray-300 hover:text-white transition-colors duration-200 hover:translate-x-2 transform cursor-pointer w-full text-left"
                                         >
                                             {item}
-                                        </a>
+                                        </button>
                                     ))}
                                 </div>
                             </div>
@@ -97,7 +110,10 @@ export function Footer() {
                         <div className="text-center mb-12">
                             <div className="relative inline-block group">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 animate-pulse"></div>
-                                <button className="relative px-12 py-5 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-bold text-lg shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-1">
+                                <button
+                                    onClick={handleComingSoon}
+                                    className="relative px-12 py-5 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-bold text-lg shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-1 cursor-pointer"
+                                >
                                     Join the Future of Pet Care
                                 </button>
                             </div>
@@ -107,17 +123,17 @@ export function Footer() {
                         <div className="border-t border-white/10 pt-8">
                             <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
                                 <p className="text-gray-400 text-sm">
-                                    © 2024 TechPup HugVest. All rights reserved.
+                                    © 2025 TechPup HugVest. All rights reserved.
                                 </p>
                                 <div className="flex items-center space-x-6">
                                     {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((item) => (
-                                        <a
+                                        <button
                                             key={item}
-                                            href="#"
-                                            className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                                            onClick={handleComingSoon}
+                                            className="text-gray-400 hover:text-white text-sm transition-colors duration-200 cursor-pointer"
                                         >
                                             {item}
-                                        </a>
+                                        </button>
                                     ))}
                                 </div>
                             </div>
