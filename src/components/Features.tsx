@@ -1,4 +1,4 @@
-import { HeartHandshakeIcon, BrainCircuitIcon, ActivityIcon, BatteryChargingIcon, ShieldCheckIcon, UsersIcon, MapPinIcon, HeadphonesIcon } from 'lucide-react';
+import { HeartHandshakeIcon, BrainCircuitIcon, ActivityIcon, BatteryChargingIcon, ShieldCheckIcon, UsersIcon, MapPinIcon } from 'lucide-react';
 
 export function Features() {
     const features = [{
@@ -36,11 +36,6 @@ export function Features() {
         title: 'GPS Tracker',
         description: 'Always know where your pet is with built-in GPS tracking.',
         gradient: 'from-red-400 to-rose-500'
-    }, {
-        icon: HeadphonesIcon,
-        title: '24/7 Customer Support',
-        description: 'Our team is always here to help you and your pet.',
-        gradient: 'from-violet-400 to-purple-500'
     }];
 
     return (

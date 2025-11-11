@@ -76,7 +76,6 @@ export function SocialImpact() {
                                         {[
                                             "Reduced anxiety in shelter environments",
                                             "Faster adoption rates for calm pets",
-                                            "24/7 comfort for traumatized animals",
                                             "Better sleep and improved behavior"
                                         ].map((benefit, index) => (
                                             <div key={index} className="flex items-center space-x-3">

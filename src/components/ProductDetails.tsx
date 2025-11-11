@@ -174,7 +174,7 @@ export function ProductDetails() {
                                     </div>
                                     <div className="flex items-center space-x-2">
                                         <HeartIcon size={16} />
-                                        <span>30-Day Trial</span>
+                                        <span>1 year warranty</span>
                                     </div>
                                 </div>
                             </div>

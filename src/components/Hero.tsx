@@ -72,7 +72,7 @@ export function Hero() {
 
                     {/* Benefits with enhanced animations */}
                     <div className="flex flex-wrap justify-center gap-6 text-sm mb-16 animate-fade-in delay-700">
-                        {['Lowest pre-retail price', 'Free bonus features', 'First Kickstarter access'].map((benefit, i) => (
+                        {['Lowest pre-retail price', 'Free bonus features', 'First product access'].map((benefit, i) => (
                             <div
                                 key={i}
                                 className="flex items-center space-x-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/10 hover:scale-110 transition-transform duration-300 animate-bounce"
